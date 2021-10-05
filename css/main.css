@@ -3,4 +3,59 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
+    color: #5d5d5d;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+}
+h3{
+    text-transform:uppercase;
+    color: white;
+}
+/* aside section */
+aside img{
+    width: 200px;
+}
+aside li{
+    margin-bottom:20px;
+}
+.footer{
+    position: relative;
+    bottom: 0;
+}
+
+/* utility */
+.container {
+    padding:20px;
+    padding-bottom:0;
+}
+.flex{
+    display: flex;
+}
+.column{
+    flex-direction: column;
+}
+.grow{
+    flex-grow: 1;
+}
+.h-full{
+    height: 100vh;
+}
+.w70{
+    width: 70%;
+}
+.w30{
+    width: 15%;
+}
+
+.mb-30{
+    margin-bottom: 30px;
+}
+
+.bg-1{
+    background-color: black;
+    
 }
