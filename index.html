@@ -15,9 +15,9 @@
 <body>
     <main class="flex">
         <aside class="flex column w30 h-full bg-1">
-            <section class="container">
-                <img class="mb-30" src="./spotify/img/logo.svg" alt="logo">
-                <ul class="nav">
+            <section class="flex column h-full container">
+                <ul class="nav grow">
+                    <li><a href="#"><img class="mb-30" src="./spotify/img/logo.svg" alt="logo"></a></li>
                     <li><a href="#"><i></i>Home</a></li>
                     <li><a href="#"><i></i>Cerca</a></li>
                     <li><a href="#"><i></i>La tua libreria</a></li>
@@ -39,16 +39,23 @@
                 </ul>
             </section>
         </aside>
-        <section class="grow w70">
+        <section class="flex column grow w70">
             <!-- Upgrade -->
-
-            <section class="container">
-                <nav></nav>
-                 <!-- recently played -->
-            
-                <!-- created for you -->
-            
-                <!-- artist -->          
+            <div class="upgrade bg-2">
+                <span class="button">EFFETTUA L'UPGRADE</span>
+            </div>
+            <section class="container grow bg-3">
+                <nav>
+                    <ul class="flex wrap jc-c">
+                        <li><a href="#">IN EVIDENZA</a></li>
+                        <li><a href="#">PODCAST</a></li>
+                        <li><a href="#">CLASSIFICHE</a></li>
+                        <li><a href="#">GENERI E MOOD</a></li>
+                        <li><a href="#">NUOVE USCITE</a></li>
+                        <li><a href="#">SCOPRI</a></li>
+                    </ul>
+                </nav>
+                
             </section>
             
         </section>
