@@ -16,7 +16,11 @@ a{
     text-decoration: none;
     color: currentColor;
 }
+h2{
+    margin-top:40px;
+}
 h3{
+    margin:20px auto 10px;
     color: white;
 }
 /* aside section */
@@ -30,6 +34,11 @@ aside img{
 }
 aside li{
     margin-bottom:20px;
+}
+aside li i{
+    font-size: 30px;
+    margin: 0 5px;
+    vertical-align: middle;
 }
 
 /* MAIN */
@@ -55,10 +64,21 @@ nav li:first-child{
     border-bottom: 2px solid #9ee92d;
 }
 
+div.flex.wrap{
+    margin-top:30px;
+}
+div.flex.wrap h3{
+    text-align: center;
+}
+.artist{
+    display: block;
+    text-align: center;
+}
 /* recently-played */
 .card{
     width: calc(100%/6);
     padding-right: 15px;
+    
 }
 .card img{
     width: 100%;
@@ -78,12 +98,28 @@ footer{
     width: 20%;
 }
 .right{
-    text-align: right;
+    justify-content: flex-end;
 }
-
+.right i{
+    margin:0 5px;
+}
+.info{
+    margin-right: 30px;
+}
+.flex.ai-c.left i{
+margin:0 10px;
+}
 
 .left img{
     width: 50px;
+    height: 50px;
+    margin-right:20px;
+    vertical-align: middle;
+}
+
+.middle i{
+    font-size:25px;
+    margin:0 10px;
 }
 .player{
     display: inline-block;
@@ -94,6 +130,7 @@ footer{
     border-radius: 2px;
     overflow: hidden;
     vertical-align: middle;
+    margin: 0 5px ;
 }
 .player .time{
     position: absolute;
@@ -137,6 +174,9 @@ footer{
 .jc-sb{
     justify-content: space-between;
 }
+.ai-c{
+    align-items: center;
+}
 
 .h-90{
     height: 90vh;
@@ -154,8 +194,21 @@ footer{
     width: 15%;
 }
 
+.inline-block{
+    display: inline-block;
+}
+
+.circle{
+    border-radius:50%;
+}
 .mb-30{
     margin-bottom: 30px;
+}
+.mb-15{
+    margin-bottom: 15px;
+}
+.pb-20{
+    padding-bottom: 20px;
 }
 
 .bg-1{
@@ -172,3 +225,5 @@ footer{
 .bg-4{
     background-color: #282828;
 }
+
+
