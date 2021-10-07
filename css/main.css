@@ -16,7 +16,6 @@ a{
     color: currentColor;
 }
 h3{
-    text-transform:uppercase;
     color: white;
 }
 /* aside section */
@@ -38,12 +37,58 @@ aside li{
     margin-right: 5px;
 }
 
+
 /* main-content */
 nav li{
     margin:1.5%;
 }
 nav li:first-child{
     border-bottom: 2px solid #9ee92d;
+}
+
+/* recently-played */
+.card{
+    width: calc(100%/6);
+    padding-right: 15px;
+}
+.card img{
+    width: 100%;
+}
+
+
+.middle{
+    width: 60%;
+    text-align: center;
+}
+.left, .right{
+    width: 20%;
+}
+.right{
+    text-align: right;
+}
+
+
+.left img{
+    width: 50px;
+}
+.player{
+    display: inline-block;
+    position: relative;
+    background-color: #5a5a5a;
+    height: 5px;
+    width: 50%;
+    border-radius: 2px;
+    overflow: hidden;
+    vertical-align: middle;
+}
+.player .time{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    background-color: white;
+    height: 5px;
+    width: 30%;    
 }
 
 /* utility */
@@ -66,20 +111,29 @@ nav li:first-child{
 .wrap{
     flex-wrap: wrap;
 }
+.overflow{
+    overflow: hidden;
+}
 .grow{
     flex-grow: 1;
 }
 .jc-c{
     justify-content: center;
 }
+.jc-sb{
+    justify-content: space-between;
+}
 
 .h-full{
     height: 100vh;
 }
-.w70{
-    width: 70%;
+.w-full{
+    width: 100%;
 }
-.w30{
+.w85{
+    width: 85%;
+}
+.w15{
     width: 15%;
 }
 
@@ -97,4 +151,7 @@ nav li:first-child{
 }
 .bg-3{
     background-color: #141922;
+}
+.bg-4{
+    background-color: #282828;
 }

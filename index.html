@@ -14,16 +14,16 @@
 </head>
 <body>
     <main class="flex">
-        <aside class="flex column w30 h-full bg-1">
+        <aside class="flex column w15 grow bg-1">
             <section class="flex column h-full container">
                 <ul class="nav grow">
                     <li><a href="#"><img class="mb-30" src="./spotify/img/logo.svg" alt="logo"></a></li>
-                    <li><a href="#"><i></i>Home</a></li>
-                    <li><a href="#"><i></i>Cerca</a></li>
-                    <li><a href="#"><i></i>La tua libreria</a></li>
+                    <li><a href="#"><i class="fa-solid fa-house"></i>Home</a></li>
+                    <li><a href="#"><i class="fa-solid fa-magnifying-glass"></i>Cerca</a></li>
+                    <li><a href="#"><i class="fa-solid fa-books"></i>La tua libreria</a></li>
             
-                    <li><a href="#"><i></i><h3>Playlist</h3></a></li>
-                    <li><a href="#"><i></i>Crea Playlist</a></li>
+                    <li><a href="#"><h3>PLAYLIST</h3></a></li>
+                    <li><a href="#"><i class="fa-solid fa-square-plus"></i>Crea Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
                     <li><a href="#">Nome Playlist</a></li>
@@ -33,13 +33,13 @@
                     <li><a href="#">Nome Playlist</a></li>
                 </ul>
                 <ul class="footer">
-                    <li><i></i> Installa app</li>
+                    <li><i class="fa-regular fa-circle-arrow-down"></i> Installa app</li>
                     <hr>
-                    <li><i></i> <h3>John Doe</h3></li>
+                    <li><i class="fa-regular fa-user"></i> <h3>John Doe</h3></li>
                 </ul>
             </section>
         </aside>
-        <section class="flex column grow w70">
+        <section class="flex column grow w85">
             <!-- Upgrade -->
             <div class="upgrade bg-2">
                 <span class="button">EFFETTUA L'UPGRADE</span>
@@ -55,15 +55,105 @@
                         <li><a href="#">SCOPRI</a></li>
                     </ul>
                 </nav>
-                
+
+                <!-- recently played -->
+                <h2>Recently played</h2>
+                <div class="flex wrap">
+                    <span class="card">
+                        <img src="./spotify/img/metal_lifting.jpg" alt="Metal">
+                        <h3>Heavy Metal</h3>
+                        <span class="artist">Subtitle</span>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/stranger.jpeg" alt="Metal">
+                        <h3>Stranger Things, Vol.1 (Netflix Original Series Soundtrack)</h3>
+                        <span class="artist">Kyle Dixon & Michael Stein</span>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/aquietplace.jpeg" alt="Metal">
+                        <h3>A quiet place</h3>
+                        <span class="artist">Subtitle</span>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/split.jpeg" alt="Metal">
+                        <h3>Split</h3>
+                        <span class="artist">Subtitle</span>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/cure.jpeg" alt="Metal">
+                        <h3>A cure for wellness</h3>
+                        <span class="artist">Subtitle</span>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/sinister.jpeg" alt="Metal">
+                        <h3>Sinister</h3>
+                        <span class="artist">Subtitle</span>
+                    </span>
+                </div>
+                <!-- created for you -->
+                <h2>Creato per John Doe</h2>
+                <span>Più ascolti, più accurati saranno i suggerimenti</span>
+                <div class="flex wrap">
+                    <span class="card">
+                        <img src="./spotify/img/metal_lifting.jpg" alt="Metal">
+                        <h3>Heavy Metal</h3>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/stranger.jpeg" alt="Metal">
+                        <h3>Stranger Things, Vol.1 (Netflix Original Series Soundtrack)</h3>
+                    </span>
+                </div>
+                <!-- artist -->  
+                <h2>Artisti più popolari</h2>   
+                <span>Più ascolti, più accurati saranno i suggerimenti</span>  
+                <div class="flex wrap">
+                    <span class="card">
+                        <img src="./spotify/img/metal_lifting.jpg" alt="Metal">
+                        <h3>Heavy Metal</h3>
+                    </span>
+                    <span class="card">
+                        <img src="./spotify/img/stranger.jpeg" alt="Metal">
+                        <h3>Stranger Things, Vol.1 (Netflix Original Series Soundtrack)</h3>
+                    </span>
+                </div> 
             </section>
             
         </section>
     </main>
-    <footer class="flex">
+    <footer class="flex container jc-sb w-full bg-4">
         <!-- info -->
+        <span class="flex left">
+            <img src="./spotify/img/sinister.jpeg" alt="sinister">
+            <span class="info">
+                <h4>Sinister</h4>
+                Brano Nome
+            </span>
+            <i><i class="fa-regular fa-heart"></i></i>
+            <i><i class="fa-light fa-folder"></i></i>
+        </span>
         <!-- player -->
+        <span class="middle">
+            <i><i class="fa-solid fa-shuffle"></i></i>
+            <i><i class="fa-solid fa-caret-left"></i></i>
+            <i><i class="fa-regular fa-circle-play"></i></i>
+            <i><i class="fa-solid fa-caret-right"></i></i>
+            <i><i class="fa-regular fa-arrow-rotate-right"></i></i>
+            <br>
+            0:25
+            <span class="player">
+                <span class="time"></span>
+            </span>
+            4:35
+        </span>
         <!-- audio -->
+        <span class="right">
+            <i><i class="fa-solid fa-list-ul"></i></i>
+            <i><i class="fa-solid fa-desktop"></i></i>
+            <i><i class="fa-solid fa-volume-high"></i></i>
+            <span class="player">
+                <span class="time"></span>
+            </span>
+        </span>
     </footer>
 </body>
 </html>
