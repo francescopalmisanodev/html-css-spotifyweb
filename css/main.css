@@ -18,10 +18,14 @@ a{
 }
 h2{
     margin-top:40px;
+    color:white;
 }
 h3{
     margin:20px auto 10px;
     color: white;
+}
+h4{
+    color:white;
 }
 /* aside section */
 aside {
@@ -50,12 +54,17 @@ main{
 }
 /* upgrade */
 .upgrade{
-    line-height: 100px;
+    line-height:100px;
     text-align: right;
+    
 }
 .upgrade .button{
     vertical-align: middle;
     margin-right: 5px;
+    display:inline-block;
+    line-height:normal;
+    transition: all 0.3s;
+    
 }
 
 
@@ -124,6 +133,10 @@ footer{
 .middle i{
     font-size:25px;
     margin:0 10px;
+    color: #fff;
+}
+.right i{
+    color: white;
 }
 .player{
     display: inline-block;
@@ -277,4 +290,22 @@ footer{
     body{
         padding-left: 70px;
     }
+}
+
+
+/* animation */
+.button:hover{
+    transform: scale(1.1);
+}
+li:hover{
+    color: white;
+}
+footer .left i:hover {
+    color: white;
+}
+footer .left .song:hover {
+    text-decoration: underline;
+}
+.middle .fa-regular.fa-circle-play:hover{
+    transform: scale(1.3);
 }
