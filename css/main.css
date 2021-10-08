@@ -7,7 +7,7 @@
 }
 body{
     color: #5d5d5d;
-    padding-left: 15%;
+    padding-left: 230px;
 }
 ul{
     list-style: none;
@@ -28,6 +28,7 @@ aside {
     position:fixed;
     top: 0;
     left: 0;
+    width: 230px;
 }
 aside img{
     width: 200px;
@@ -40,7 +41,9 @@ aside li i{
     margin: 0 5px;
     vertical-align: middle;
 }
-
+.s-logo{
+    display: none;
+}
 /* MAIN */
 main{
     margin-bottom: 10vh;
@@ -94,11 +97,12 @@ footer{
     width: 60%;
     text-align: center;
 }
-.left, .right{
+.left{
     width: 20%;
 }
 .right{
     justify-content: flex-end;
+    width: 20%;
 }
 .right i{
     margin:0 5px;
@@ -107,7 +111,7 @@ footer{
     margin-right: 30px;
 }
 .flex.ai-c.left i{
-margin:0 10px;
+    margin:5px 0;
 }
 
 .left img{
@@ -161,6 +165,9 @@ margin:0 10px;
 }
 .wrap{
     flex-wrap: wrap;
+}
+.shrink{
+    flex-shrink: 0;
 }
 .overflow{
     overflow: hidden;
@@ -226,4 +233,48 @@ margin:0 10px;
     background-color: #282828;
 }
 
+@media screen and (max-width:1000px){
+    .card{
+        width: calc(100%/4);
+    }
+}
+@media screen and (max-width:800px){
+    .card{
+        width: calc(100%/2);
+    }
+}
+@media screen and (max-width:600px){
+    aside ul li{
+        color: transparent;
+        margin-bottom: 5px;
 
+    }
+    .s-logo{
+        display: inline-block;
+        width: 35px;
+        margin-bottom: 5px;
+    }
+    aside ul li img:first-of-type{
+        display: none;
+    }
+    aside ul li h3{
+        color: transparent;
+    }
+    .fa-solid.fa-square-plus{
+        color: transparent;
+    }
+    aside hr{
+        color: transparent;
+    }
+    aside ul li i{
+        color:gainsboro;
+        margin-left: 0;
+    }
+    
+    aside{
+        width: 70px;
+    }
+    body{
+        padding-left: 70px;
+    }
+}
